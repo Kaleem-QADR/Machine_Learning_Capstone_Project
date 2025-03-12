@@ -50,6 +50,30 @@ BIC & AIC (for GMM): Helps determine the optimal number of Gaussian components.
 Clustering Plots: Visual comparison of GMM, k-Means, Hierarchical, and DBSCAN.
 
 
+## 📊 Clustering Model Comparison Results  
+
+### **1️⃣ Silhouette Score Summary**  
+| Dataset        | k-Means  | Hierarchical | DBSCAN  | GMM  |
+|---------------|---------|-------------|--------|------|
+| **Moons**     | **0.441** ✅ | 0.381 | 0.386 | 0.435 |
+| **Blobs**     | **0.787** ✅ | 0.783 | 0.720 | 0.783 |
+| **Circles**   | **0.381** ✅ | 0.351 | 0.004 ❌ | 0.381 |
+
+### **2️⃣ GMM Model Selection (BIC & AIC)**
+| Dataset        | Optimal Components (BIC) | Optimal Components (AIC) |
+|---------------|-------------------------|-------------------------|
+| **Moons**     | 8 | 9 |
+| **Blobs**     | **3** ✅ | 6 |
+| **Circles**   | 9 | 9 |
+
+### **🔍 Key Takeaways**  
+✔ **k-Means performed best for simple, well-separated clusters** (Blobs dataset).  
+✔ **GMM closely matched k-Means but allows probabilistic clustering**.  
+✔ **DBSCAN struggled with Circles Dataset, confirming density-based limitations**.  
+✔ **BIC & AIC helped determine the best number of Gaussian components for GMM**.  
+
+---
+
 
 📌 References
 scikit-learn: GaussianMixture
@@ -68,7 +92,8 @@ Special thanks to our instructor and peers for their support and feedback on thi
 ✅ **Datasets & Objectives**  
 ✅ **File Structure (Matches Your Preferred Format)**  
 ✅ **How to Run the Code**  
-✅ **Evaluation Metrics**  
+✅ **Evaluation Metrics** 
+✅ **Clustering Model Comparison Results**  
 ✅ **References & Acknowledgments**  
 
 ---
