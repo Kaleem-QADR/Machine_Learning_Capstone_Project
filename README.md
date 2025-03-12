@@ -17,15 +17,23 @@ We evaluate clustering performance on three synthetic datasets:
 
 ## 🏗️ Project Structure  
 ```
-Machine_Learning_Capstone_Project/
+MACHINE_LEARNING_CAPSTONE_PROJECT/
+│── plots/
+│   ├── blobs_dataset_clustering.png
+│   ├── blobs_dataset_gmm_selection.png
+│   ├── circles_dataset_clustering.png
+│   ├── circles_dataset_gmm_selection.png
+│   ├── gmm_probabilities.png
+│   ├── gmm_probability_histogram.png
+│   ├── moons_dataset_clustering.png
+│   ├── moons_dataset_gmm_selection.png
+│
 │── scripts/
-│ ├── main.ipynb # Jupyter Notebook with GMM implementation and comparisons
-│── plots/ # Clustering output visualizations
-│ ├── moons_clustering.png # GMM vs. traditional clustering on Moons Dataset
-│ ├── blobs_clustering.png # GMM vs. traditional clustering on Blobs Dataset
-│ ├── circles_clustering.png # GMM vs. traditional clustering on Circles Dataset
-│── README.md # Project description and instructions
-│── report.docx # Final written report
+│   ├── main.ipynb  # Jupyter Notebook with clustering implementation
+│
+│── Gaussian Mixture Models - Report.docx  # Final project report
+│── README.md  # Project description and instructions
+
 ```
 
 
